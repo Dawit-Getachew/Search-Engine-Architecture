@@ -1,0 +1,24 @@
+{
+  "name": "search-engine-architecture",
+  "version": "1.0.0",
+  "description": "Simple Search Engine Architecture made with node.js and ElasticSearch",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dawit-Getachew/Search-Engine-Architecture.git"
+  },
+  "keywords": [
+    "Search",
+    "Engine",
+    "Architecture"
+  ],
+  "author": "Dawit Getachew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dawit-Getachew/Search-Engine-Architecture/issues"
+  },
+  "homepage": "https://github.com/Dawit-Getachew/Search-Engine-Architecture#readme"
+}
