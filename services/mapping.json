@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "properties": {
+      "id": { "type": "number" },
+        "title": { "type": "text" },
+        "tag": { "type": "text" },
+        "position": { "type": "number" }
+    }
+  }
+}

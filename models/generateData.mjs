@@ -15,5 +15,5 @@ const generateImageData = (number) => {
 };
 fs.writeFileSync(
     "./db.json",
-    JSON.stringify({data:generateImageData(3000000) })
+    JSON.stringify({data:generateImageData(30) })
 );

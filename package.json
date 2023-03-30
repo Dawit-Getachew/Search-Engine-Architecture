@@ -2,9 +2,11 @@
   "name": "search-engine-architecture",
   "version": "1.0.0",
   "description": "Simple Search Engine Architecture made with node.js and ElasticSearch",
-  "main": "server.js",
+  "main": "server.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start server.mjs && pm2 monitor PM2 Plus Monitoring",
+    "devStart": "nodemon server.mjs"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/Dawit-Getachew/Search-Engine-Architecture/issues"
   },
-  "homepage": "https://github.com/Dawit-Getachew/Search-Engine-Architecture#readme"
+  "homepage": "https://github.com/Dawit-Getachew/Search-Engine-Architecture#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.6.0",
+    "config": "^3.3.9",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "faker": "^5.5.3",
+    "pm2": "^5.3.0",
+    "translate": "^1.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
