@@ -5,8 +5,8 @@ const router = express.Router()
 
 
 
-router.route('/').get(searchFunction);
-router.route('/sort').get(sortResult);
-router.route('/translate').get(translateLanguage);
+router.route('/').post(searchFunction).get(searchFunction);
+router.route('/sort').post(sortResult).get(sortResult)
+router.route('/translate').post(translateLanguage).get(translateLanguage);
 
 export default router
