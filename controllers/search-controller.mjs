@@ -2,6 +2,7 @@ import client from "../services/elasticsearch.mjs";
 import translate from "translate";
 await client.info()
 
+
 async function run(term){
     const search = await client.search( {
         index: 'sample-search-engine',
@@ -90,14 +91,15 @@ const sortResult = async (req, res) => {
 //@access private
 
 const translateLanguage = async (req, res) => {
-    const {query} = req.body;
+    const {query, lang} = req.body;
     console.log(query)
+    console.log(lang)
     if(!query){
         res.status(400);
         throw new Error("Query field is mandatory!")
     }
 
-    const text = await translate(query, {from: "es", to:"en"});
+    const text = await translate(query, {from: lang, to:"en"});
     const search = run(text).catch(console.log)
     console.log(text)
     let searchValues = await Promise.resolve(search)
