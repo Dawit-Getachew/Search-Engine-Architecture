@@ -25,6 +25,7 @@
   "homepage": "https://github.com/Dawit-Getachew/Search-Engine-Architecture#readme",
   "dependencies": {
     "@elastic/elasticsearch": "^8.6.0",
+    "@treblle/express": "^0.0.3",
     "config": "^3.3.9",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

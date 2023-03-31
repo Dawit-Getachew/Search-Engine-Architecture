@@ -35,8 +35,8 @@ async function run(term){
 
 
 
-//@desc Get All Contact
-//@route GET /api/contacts
+//@desc Get All searchFunction
+//@route GET /api/searchFunction
 //@access private
 const searchFunction = async (req, res) => {
     const {query} = req.body;
@@ -59,10 +59,9 @@ const searchFunction = async (req, res) => {
 
 
 
-// @desc delete Contact
-// @route DELETE /api/contacts:id
+// @desc get sortResult
+// @route GET /api/sortResult
 // @access private
-//
 const sortResult = async (req, res) => {
     const {query} = req.body;
     console.log(query)
@@ -86,10 +85,9 @@ const sortResult = async (req, res) => {
 
 
 
-//@desc Update Contact
-//@route PUT /api/contacts:id
+//@desc get translateLanguage
+//@route GET /api/translateLanguage
 //@access private
-
 const translateLanguage = async (req, res) => {
     const {query, lang} = req.body;
     console.log(query)

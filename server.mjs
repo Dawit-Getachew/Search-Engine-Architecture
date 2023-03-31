@@ -6,10 +6,13 @@ import dotenv from 'dotenv';
 dotenv.config()
 import errorHandler from './middleware/errorHandler.mjs';
 import router from './routes/search-route.mjs';
+import treblle from '@treblle/express';
+
 
 const PORT = process.env.PORT || 8000;
 const app = express();
 
+app.use(treblle())
 app.use(express.json());
 app.use('/api/search', router);
 app.use(errorHandler);
