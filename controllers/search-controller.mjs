@@ -42,7 +42,7 @@ const searchFunction = async (req, res) => {
     const {query} = req.body;
     console.log(query)
     if(!query){
-        res.status(400);
+        res.status(400).send("Query field is mandatory!");
         throw new Error("Query field is mandatory!")
     }
 
@@ -67,7 +67,7 @@ const sortResult = async (req, res) => {
     const {query} = req.body;
     console.log(query)
     if(!query){
-        res.status(400);
+        res.status(400).send("Query field is mandatory!");
         throw new Error("Query field is mandatory!")
     }
     const search = run(query.toString()).catch(console.log)
@@ -95,7 +95,7 @@ const translateLanguage = async (req, res) => {
     console.log(query)
     console.log(lang)
     if(!query){
-        res.status(400);
+        res.status(400).send("Query field is mandatory!");
         throw new Error("Query field is mandatory!")
     }
 
